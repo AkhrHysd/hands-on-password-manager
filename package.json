@@ -1,0 +1,15 @@
+{
+  "name": "hands-on-password-manager",
+  "version": "1.0.0",
+  "description": "hands on",
+  "main": "index.js",
+  "scripts": {
+    "test": "turbo run test",
+    "build": "turbo run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "turbo": "^1.10.16"
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "#schema": "https://turborepo.org/schema.json",
+    "pipeline": {
+        "build": {
+            "dependsOn": ["^build"]
+        }
+    },
+    "npmClient": "npm",
+    "packages": {
+        "apps/*": {},
+        "packages/*": {}
+    }
+}
