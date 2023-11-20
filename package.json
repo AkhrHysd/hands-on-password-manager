@@ -2,10 +2,17 @@
   "name": "hands-on-password-manager",
   "version": "1.0.0",
   "description": "hands on",
-  "main": "index.js",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
+    "dev": "turbo run dev",
+    "dev:frontend": "turbo run dev --filter=apps/frontend",
     "test": "turbo run test",
     "build": "turbo run build",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
     "ganache": "ganache-cli --port 8545",
     "contract:compile": "turbo run compile --filter=packages/contract",
     "contract:migrate": "turbo run migrate --filter=packages/contract",
